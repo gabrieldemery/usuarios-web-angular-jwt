@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "name": "Vinícius Aguiar",
+            "email": "vini@gmail.com",
+            "username": "administrador"
+        },
+        {
+            "id": "2",
+            "name": "Gabriel D'Emery",
+            "email": "gabrielsdg@gmail.com",
+            "username": "gabrieldemery"
+        },
+        {
+            "id": "3",
+            "name": "Wellington",
+            "email": "tomcareca@gmail.com",
+            "username": "careca.carpina"
+        },
+        {
+            "id": "4",
+            "name": "Lucas Fernandes",
+            "email": "loiro.legolas@gmail.com",
+            "username": "legolasdopassinho"
+        }
+    ]
+}

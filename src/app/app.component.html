@@ -1,0 +1,20 @@
+<header>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
+    <h5 class="mr-md-auto font-weight-normal my-0 ml-2">Sistema de Usuários</h5>
+    <a class="btn btn-primary" *ngIf="currentUser"><i class="far fa-user-circle"></i> {{currentUser.name}}</a>
+  </div>
+  <ul class="d-flex flex-column flex-md-row align-items-center px-md-4 mb-3 nav bg-light border-bottom shadow-sm px-3 py-1" *ngIf="currentUser">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/']"><i class="fas fa-users"></i> Usuários</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" (click)="logout()"><i class="fas fa-sign-out-alt"></i> Sair</a>
+    </li>
+  </ul>
+</header>
+
+<div class="py-5">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
