@@ -1,4 +1,4 @@
-<form [formGroup]="editForm">
+<form [formGroup]="editForm" (ngSubmit)="submit()">
     <div class="modal-header">
         <h4 class="modal-title pull-left">Alterar e-mail de {{user.name}}</h4>
         <button class="close pull-right" type="button" aria-label="Fechar" (click)="close()">
@@ -22,6 +22,6 @@
     </div>
     <div class="modal-footer">
         <button class="btn btn-default" type="button" (click)="close()">Fechar</button>
-        <button class="btn btn-primary" type="button" [disabled]="!editForm.valid" (click)="submit()">Salvar Alterações</button>
+        <button class="btn btn-primary" type="submit" [disabled]="!editForm.valid">Salvar Alterações</button>
     </div>
 </form>
